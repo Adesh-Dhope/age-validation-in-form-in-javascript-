@@ -1,1 +1,1 @@
-Doing input validation in form in javascript
+Doing input validation in form in javascript, checking whether you are an Teenager or Adult, user clicked button, but did not enter any age value, form will create a alert popup, thats says enter age value.
