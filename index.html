@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body{
+    text-align: center;
+}
+#age-data{
+    padding: 1em;
+    margin: 5px;
+}
+button{
+    padding: 4px;
+    margin: 5px;
+    background-color: black;
+    color: aliceblue;
+}
+button:hover{
+    background: rgb(143, 125, 125);
+    cursor: pointer;
+}
+form{
+    margin-top: 5em;
+}
+</style>
+<body>
+ 
+
+
+<form action="">
+<input type="text" name=""  id="age-data" placeholder="Enter Your Age"><br>
+<button type="submit" onclick="Data(event)">Check</button>
+</form>
+<h3 id="data"></h3>
+
+<script>
+
+function Data(e){
+    e.preventDefault()
+let age  = document.getElementById("age-data").value
+
+if(age === ""){
+    alert('Please enter age first');
+    return;
+}
+    if(age <= 18){
+document.getElementById("data").textContent = "You are Teenager" 
+}else if(age >= 18){
+document.getElementById("data").textContent = "You are Adult"
+}else{
+document.getElementById("data").textContent = "Enter Valid Value"
+}
+}
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
